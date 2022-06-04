@@ -260,13 +260,14 @@ body{
    .team{
        background-color: var(--third-bgr-color);
        text-align: center;
+       padding: 94px 0;
 
    }
    .team-title{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
-        padding-top: 94px;
+        
         margin-bottom: 50px;
    }
      .team-item{ 
@@ -294,24 +295,32 @@ body{
 
    /* portfolio */
     .portfolio{
-        
+        padding: 94px 0 ;
     }
 
 
    /* Filters */
     
    .filter-item{
-        padding: 94px 0 50px;
+        margin-bottom: 50px;
 
    }
 
    /* projects */
    .project-item{
        
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+
       
    }
    .project-inner{
-   
+        margin-bottom: 20px;
+        box-sizing: border-box ;
+        border: 1px solid #EEEEEE;
+       
+    
    }
 
    .project-inner a{
@@ -323,6 +332,17 @@ body{
        width: 370px;
        height: 294px;
        margin-bottom: 10px;
+       border-color: #188CE8;
+       
+  
+       
+   }
+
+   .card-border{
+        box-sizing: border-box;
+        border: 1px solid #EEEEEE;
+        
+
    }
    .project-name{
         font-weight: 700;
@@ -330,6 +350,7 @@ body{
         line-height: 2;     
         letter-spacing: 0.06em;
         margin-bottom: 4px;
+        padding: 0 24px;
   
    }
    .project-text{
@@ -338,8 +359,10 @@ body{
     line-height: 1.88;
     letter-spacing: 0.03em;
 
+    padding: 0 24px;
+
     color: var(--third-text-color);
-    margin-bottom: 20px;
+    
    }
 
 
