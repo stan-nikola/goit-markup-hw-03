@@ -20,28 +20,28 @@
   </head>
   <body>
     <header class="header-page">
-      <div class="container">
-        <nav class="nav-page list">
+      <div class="container header-nav">
+        <nav class="nav-page">
           <a class="logo link" href="./index.html"> <span class="accent">Web</span>Studio </a>
-          <ul class="list">
-            <li>
-              <a class="nav-link link" href="./index.html"> Студия </a>
+          <ul class="nav-item list">
+            <li class="nav-inner">
+              <a class="nav-link link" href="./index.html"> Студия</a>
             </li>
-            <li>
-              <a class="nav-link link" href="./portfolio.html">
-                <span class="accent">Портфолио</span>
-              </a>
+            <li class="nav-inner">
+              <a class="nav-link link" href="./portfolio.html"
+                ><span class="accent">Портфолио</span></a
+              >
             </li>
-            <li>
+            <li class="nav-inner">
               <a class="nav-link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts list">
-          <li>
+          <li class="contacts-item">
             <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="contacts-item">
             <a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -50,7 +50,7 @@
 
     <main>
       <section class="portfolio">
-        <div class="container container-no-padding">
+        <div class="container fix-margin-container">
           <h1 class="visually-hidden">Portfolio</h1>
 
           <ul class="filter-item list">
@@ -74,38 +74,62 @@
           <ul class="project-item list">
             <li class="project-inner">
               <a class="link" href="" target="_blank">
-                <img class="project-img" src="./images/portfilio/1.jpg" alt="Технокряк" />
-                <h2 class="project-name">Технокряк</h2>
-                <p class="project-text">Веб-сайт</p>
-              </a>
-            </li>
-
-            <li class="project-inner">
-              <a class="link" href="" target="_blank">
-                <img class="project-img" src="./images/portfilio/2.jpg" alt="Постер" />
-                <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
-                <p class="project-text">Дизайн</p>
-              </a>
-            </li>
-            <li class="project-inner">
-              <a class="link" href="" target="_blank">
-                <img class="project-img" src="./images/portfilio/3.jpg" alt="Ресторан" />
-                <h2 class="project-name">Ресторан Seafood</h2>
-                <p class="project-text">Приложение</p>
+                <img
+                  class="project-img"
+                  src="./images/portfilio/1.jpg"
+                  with="370"
+                  alt="Технокряк"
+                />
+                <div class="project-box">
+                  <h2 class="project-name">Технокряк</h2>
+                  <p class="project-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="project-inner">
               <a class="link" href="" target="_blank">
-                <img class="project-img" src="./images/portfilio/4.jpg" alt="Проект Prime " />
-                <h2 class="project-name">Проект Prime</h2>
-                <p class="project-text">Маркетинг</p>
+                <img class="project-img" src="./images/portfilio/2.jpg" with="370" alt="Постер" />
+                <div class="project-box">
+                  <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
+                  <p class="project-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="project-inner">
               <a class="link" href="" target="_blank">
-                <img class="project-img" src="./images/portfilio/5.jpg" alt="Проект Boxes" />
-                <h2 class="project-name">Проект Boxes</h2>
-                <p class="project-text">Приложение</p>
+                <img class="project-img" src="./images/portfilio/3.jpg" with="370" alt="Ресторан" />
+                <div class="project-box">
+                  <h2 class="project-name">Ресторан Seafood</h2>
+                  <p class="project-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-inner">
+              <a class="link" href="" target="_blank">
+                <img
+                  class="project-img"
+                  src="./images/portfilio/4.jpg"
+                  with="370"
+                  alt="Проект Prime "
+                />
+                <div class="project-box">
+                  <h2 class="project-name">Проект Prime</h2>
+                  <p class="project-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-inner">
+              <a class="link" href="" target="_blank">
+                <img
+                  class="project-img"
+                  src="./images/portfilio/5.jpg"
+                  with="370"
+                  alt="Проект Boxes"
+                />
+                <div class="project-box">
+                  <h2 class="project-name">Проект Boxes</h2>
+                  <p class="project-text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="project-inner">
@@ -113,31 +137,45 @@
                 <img
                   class="project-img"
                   src="./images/portfilio/6.jpg"
+                  with="370"
                   alt="Inspiration has no Borders"
                 />
-                <h2 class="project-name">Inspiration has no Borders</h2>
-                <p class="project-text">Веб-сайт</p>
+                <div class="project-box">
+                  <h2 class="project-name">Inspiration has no Borders</h2>
+                  <p class="project-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="project-inner">
               <a class="link" href="" target="_blank">
-                <img class="project-img" src="./images/portfilio/7.jpg" alt="Издание" />
-                <h2 class="project-name">Издание Limited Edition</h2>
+                <img class="project-img" src="./images/portfilio/7.jpg" with="370" alt="Издание" />
+                <div class="project-box">
+                  <h2 class="project-name">Издание Limited Edition</h2>
+                  <p class="project-text">Дизайн</p>
+                </div>
               </a>
-              <p class="project-text">Дизайн</p>
             </li>
             <li class="project-inner">
               <a class="link" href="" target="_blank">
-                <img class="project-img" src="./images/portfilio/8.jpg" alt="Проект LAB" />
-                <h2 class="project-name">Проект LAB</h2>
-                <p class="project-text">Маркетинг</p>
+                <img
+                  class="project-img"
+                  src="./images/portfilio/8.jpg"
+                  with="370"
+                  alt="Проект LAB"
+                />
+                <div class="project-box">
+                  <h2 class="project-name">Проект LAB</h2>
+                  <p class="project-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="project-inner">
               <a class="link" href="" target="_blank">
                 <img class="project-img" src="./images/portfilio/9.jpg" alt="Growing Business" />
-                <h2 class="project-name">Growing Business</h2>
-                <p class="project-text">Приложение</p>
+                <div class="project-box">
+                  <h2 class="project-name">Growing Business</h2>
+                  <p class="project-text">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>
